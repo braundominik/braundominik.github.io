@@ -1,0 +1,184 @@
+/*
+ Aufgabe: Portfolio
+ Name: Braun Dominik
+ Matrikel: 254901
+ Datum: 19.02.2017
+ Hiermit versichere ich, dass ich diesen
+ Code selbst geschrieben habe. Er wurde
+ nicht kopiert und auch nicht diktiert.
+ */
+
+/*HEADER*/
+#thisis/*SPARTA ???*/ {
+	margin-left: 25%;
+	display: inline;
+}
+
+.headertext {
+	top: 40%;
+}
+
+#headersub {
+	position: relative;
+	top: 42%;
+	font-family: 'Comfortaa', cursive;
+	font-size: 2vw;
+	text-align: center;
+	display: none;
+}
+
+#mobiletext {
+	display: none;
+}
+
+#scrolltext {
+	font-family: 'Comfortaa', cursive;
+}
+
+#scrollnotifier {
+	position: absolute;
+	bottom: 0vh;
+	text-align: center;
+	width: 100vw;
+}
+
+#scrollnotifier p {
+	font-size: 50px;
+	margin: 0 auto;
+}
+
+.images {
+	position: absolute;
+	height: 100%;
+	margin-left: 1%;
+	margin-top: -0.65%;
+}
+
+#menubutton:hover {
+	background-color: #262626;
+	cursor: pointer;
+}
+
+.navigationbox:hover {
+	cursor: pointer;
+}
+
+/*MAIN*/
+
+.textcontent {
+	float: right;
+	width: 80vw;
+	font-family: 'Ubuntu', sans-serif;
+	height: 80vh;
+	background-color: black;
+	color: white;
+	padding: 2vh;
+	padding-top: 3vh;
+	font-size: 5vmin;
+	line-height: 5.8 vh;
+}
+
+.heading {
+	position: absolute;
+	left: -5vw;
+	top: 15vw;
+	font-size: 5vw;
+	transform: rotate(-90deg);
+	text-align: left;
+}
+
+#person {
+	position: relative;
+	top: 20%;
+}
+
+/*#desktopheading1 {
+ opacity: 0;
+ text-align: center;
+ height: 5vh;
+ width: 100vw;
+ font-family: 'Comfortaa', cursive;
+ font-size: 5vw;
+ }*/
+
+#aboutme {
+	opacity: 0;
+}
+#projects {
+	opacity: 0;
+}
+#snowflakes {
+	opacity: 0;
+}
+#snowflakes2 {
+	opacity: 0;
+}
+#elephants {
+	opacity: 0;
+}
+#elephants2 {
+	opacity: 0;
+}
+#bottles {
+	opacity: 0;
+}
+#contact {
+	opacity: 0;
+}
+
+
+
+.projectoverview {
+	cursor: pointer;
+}
+
+.hideit {
+	display: inline;
+	visibility: hidden;
+}
+
+.imgwrapper {
+	text-align: center;
+}
+
+.elephantimgs {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	height: 20vw;
+}
+
+#schnittvorlage {
+	display: none;
+	transform: rotate(90deg);
+	position: relative;
+	height: 20vw;
+	margin: 0 auto;
+}
+
+#elephantvideo {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	top: -5%;
+}
+
+.question {
+	border: 0px solid;
+}
+
+#contactcontentdesktop {
+	display: block;
+	position: absolute;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+	font-size: 3.3vw;
+}
+
+#contactcontentmobile {
+	display: none;
+}
