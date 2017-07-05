@@ -65,10 +65,10 @@ function headeranimation() {
     var headertext = document.getElementsByClassName("animatechange");
     var animationdelay = 0;
     var subscroll = getRandom(1, 4);
-    var sub1 = "Do u wanna see the snowflakes ?";
+    var sub1 = "Interested in a new sightseeing concept ?";
     var sub2 = "Wait !? There is an elephant on the ceiling";
     var sub3 = "Is bottleflipping still cool ?";
-    var note1 = "Let it scroll, let it scroll";
+    var note1 = "Explore Places !";
     var note2 = "See the elephants";
     var note3 = "You might wanna try it with this stylish bottle";
     for (i = 1; i < headertext.length; i++) {
@@ -130,10 +130,10 @@ document.addEventListener('DOMContentLoaded', function () {
             .setVelocity(document.getElementById("projects"), { opacity: 1 }, { duration: 400 })
             .addTo(controller);
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger3") })
-            .setVelocity(document.getElementById("snowflakes"), { opacity: 1 }, { duration: 400 })
+            .setVelocity(document.getElementById("website"), { opacity: 1 }, { duration: 400 })
             .addTo(controller);
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger4") })
-            .setVelocity(document.getElementById("snowflakes2"), { opacity: 1 }, { duration: 400 })
+            .setVelocity(document.getElementById("website2"), { opacity: 1 }, { duration: 400 })
             .addTo(controller);
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger5") })
             .setVelocity(document.getElementById("elephants"), { opacity: 1 }, { duration: 400 })

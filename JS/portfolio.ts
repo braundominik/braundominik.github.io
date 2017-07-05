@@ -75,10 +75,10 @@ function headeranimation(): void {
     var animationdelay: number = 0;
     var subscroll: number = getRandom(1, 4);
 
-    var sub1: string = "Do u wanna see the snowflakes ?"
+    var sub1: string = "Interested in a new sightseeing concept ?"
     var sub2: string = "Wait !? There is an elephant on the ceiling"
     var sub3: string = "Is bottleflipping still cool ?"
-    var note1: string = "Let it scroll, let it scroll"
+    var note1: string = "Explore Places !"
     var note2: string = "See the elephants"
     var note3: string = "You might wanna try it with this stylish bottle"
 
@@ -169,11 +169,11 @@ document.addEventListener('DOMContentLoaded', function() {
             .addTo(controller);
 
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger3") })
-            .setVelocity(document.getElementById("snowflakes"), { opacity: 1 }, { duration: 400 })
+            .setVelocity(document.getElementById("website"), { opacity: 1 }, { duration: 400 })
             .addTo(controller);
 
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger4") })
-            .setVelocity(document.getElementById("snowflakes2"), { opacity: 1 }, { duration: 400 })
+            .setVelocity(document.getElementById("website2"), { opacity: 1 }, { duration: 400 })
             .addTo(controller);
 
         var scene = new ScrollMagic.Scene({ triggerElement: document.getElementById("trigger5") })
