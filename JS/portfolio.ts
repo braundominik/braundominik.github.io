@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById("project1").addEventListener("click", function() {
-        Velocity(document.getElementById("trigger3"), "scroll", { duration: 3000, easing: "easeInBack" });
+        Velocity(document.getElementById("trigger4"), "scroll", { duration: 3000, easing: "easeInBack" });
     });
 
     document.getElementById("project2").addEventListener("click", function() {
@@ -248,6 +248,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById("contactmobile").addEventListener("click", function() {
         Velocity(document.getElementById("trigger8"), "scroll", { duration: 3000, easing: "easeInBack" });
+
+    });
+    
+    document.getElementById("backtoabout").addEventListener("click", function() {
+        Velocity(document.getElementById("trigger1"), "scroll", { duration: 3000, easing: "easeInBack" });
 
     });
 
