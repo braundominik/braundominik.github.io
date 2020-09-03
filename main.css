@@ -1,0 +1,364 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
+
+.card {
+    cursor: pointer;
+}
+
+header {
+    min-height: 100vh;
+    background: url(files/header/headerimg.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.h2wrapper {
+    background: url(files/header/bg.webp);
+    height: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2 {
+    height: 100px;
+    line-height: 100px;
+    margin-top: 0;
+    /*     vertical-align: middle; */
+}
+
+nav ul a {
+    font-size: 1.3rem;
+}
+
+.contact {
+    font-size: 1.8vw;
+}
+
+.contact-info {
+    color: #ff9800;
+}
+
+.contact-info:hover {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+/* css transition for scrolling navbar */
+
+nav {
+    transition: background-color .3s;
+}
+
+.card .card-image .headerimg {
+    display: none;
+}
+
+/* loader */
+
+.loader {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2rem;
+}
+
+@keyframes arrows {
+    0%, 100% {
+        color: black;
+        transform: translateY(0);
+    }
+    50% {
+        color: white;
+        transform: translateY(20px);
+    }
+}
+
+.load {
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
+}
+
+/* Footer Adjustment */
+
+.page-footer {
+    padding-top: 0px;
+}
+
+.impressum {
+    padding-right: 10px;
+}
+
+/* CARD ANIMATIONS */
+
+.cover {
+    position: fixed;
+    background: #EB5160;
+    z-index: 100;
+    transform-origin: 50% 50%;
+}
+
+.open-content {
+    width: 100%;
+    z-index: 110;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0%;
+}
+
+.open-content img {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+    z-index: 5;
+}
+
+.open-content .text {
+    background: #fff;
+    margin-top: -56%;
+    padding: 2% 5% 5% 5%;
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    text-align: justify;
+    /* margin-bottom: 5%; */
+}
+
+.open-content .text-wrap {
+    float: right;
+    width: 40%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+.floatclear {
+    clear: both;
+    margin-top: 5%;
+}
+
+.contentimage {
+    margin-top: 1.9466666667rem;
+}
+
+.open-content .text h1, .open-content .text p {
+    /* max-width: 1500px;  */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close-content {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+    z-index: 100;
+}
+
+.close-content span {
+    background: #222;
+    width: 30px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 14px;
+}
+
+.x-1 {
+    transform: rotate(45deg);
+}
+
+.x-2 {
+    transform: rotate(-45deg);
+}
+
+/* Transitions */
+
+.card {
+    transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
+}
+
+.card-image img {
+    transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
+}
+
+.card .card-action {
+    transform: translate3d(0%, 0px, 0px);
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+}
+
+.card .card-content {
+    padding-top: 0px;
+}
+
+.card-content p {
+    font-size: 1.1rem;
+    transform: translate3d(0%, 0px, 0px);
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+}
+
+.card-content .card-title {
+    font-weight: 500;
+    transform: translate3d(0%, 0px, 0px);
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+}
+
+.card.clicked .card-image img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+}
+
+.card.out, .card.out .card-image img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+}
+
+.card.out p, .card.clicked .card-content p {
+    transform: translate3d(0%, -40px, 0px);
+    opacity: 0;
+}
+
+.card.out p, .card.clicked .card-action {
+    transform: translate3d(0%, -40px, 0px);
+    opacity: 0;
+}
+
+.card.out p, .card.clicked .card-content .card-title {
+    transform: translate3d(0%, -40px, 0px);
+    opacity: 0;
+}
+
+.cover {
+    transition: transform 300ms ease-in-out;
+}
+
+.open-content {
+    transition: opacity 200ms linear 0ms;
+}
+
+.open-content.open {
+    opacity: 1;
+    pointer-events: all;
+    transition-delay: 1000ms;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+    color: #803C2D;
+}
+
+/* Smartphone View */
+
+@media screen and (max-width: 992px) {
+    header {
+        min-height: 500px;
+        background: url(files/header/mobileheader.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .open-content img {
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: auto;
+        z-index: 5;
+    }
+    .open-content .text {
+        background: #fff;
+        margin-top: -56%;
+        padding: 2% 5% 5% 5%;
+        width: 100%;
+        margin: auto;
+        font-size: 1.1rem;
+        text-align: left;
+        /* margin-bottom: 5%; */
+    }
+    .open-content .text-wrap {
+        float: none;
+        width: 100%;
+        margin-top: 7%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        padding: 2% 5% 5% 5%;
+    }
+    .contact {
+        font-size: 1.3rem;
+    }
+    .contact a {
+        display: block;
+    }
+    #kontakt .h2wrapper{
+        height: 100px;
+    }
+
+    #kontakt .h2wrapper h2{
+        line-height: 30px;
+        padding-top: 20px;
+    }
+}
+
+.intro {
+    margin-top: 45vh;
+}
+
+.name {
+    margin: 0;
+}
+
+/* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  } */
+
+main {
+    /* padding-top: 4vw; */
+    /* flex: 1 0 auto; */
+}
+
+.section {
+    padding-top: 5rem;
+}
+
+.navbar-fixed {
+    z-index: 999; 
+ }
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --mainColor: #ff9800;
+}
+
+.highlight-link {
+    background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.altColor {
+    color: black;
+}

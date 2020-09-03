@@ -1,12 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Dominik Braun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
+
+    <title>Dominik Braun</title>
 </head>
-<body>
-	//Under construction
+
+<body class="grey lighten-3" id="home">
+    <div class="loader">
+
+        <span class="load">↓</span>
+        <span class="load" style="--delay: 0.1s">↓</span>
+        <span class="load" style="--delay: 0.3s">↓</span>
+        <span class="load" style="--delay: 0.4s">↓</span>
+        <span class="load" style="--delay: 0.5s">↓</span>
+
+    </div>
+
+    <header>
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper transparent black">
+                <div class="container">
+                    <a href="" class="sidenav-trigger" data-target="m-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#home">DOMINIK</a></li>
+                        <li><a href="#projekte">PROJEKTE</a></li>
+                        <li><a href="#kontakt">KONTAKT</a></li>
+                    </ul>
+                    <ul class="sidenav grey lighten-2" id="m-menu">
+                        <li><a class="sidenav-close" href="#home">DOMINIK</a></li>
+                        <li><a class="sidenav-close" href="#projekte">PROJEKTE</a></li>
+                        <li><a class="sidenav-close" href="#kontakt">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row intro hide-on-med-and-down">
+            <div class="col s12 l5 offset-l7">
+                <h4 class="grey-text text-lighten-5">Hallo ich bin</h4>
+                <h1 class="grey-text text-lighten-5 name">Dominik</h1>
+                <p class="flow-text grey-text text-lighten-3">Webdesigner, Entwickler und kreativer Kopf aus
+                    München. Sie wollen mit mir arbeiten ? Dann schreiben sie mir doch einfach eine <a
+                        href="mailto:braun-dominik@t-online.de" target="_blank" class="highlight-link">E-Mail</a>. Oder
+                    sie
+                    sehen sich meine neuesten <a href="#projekte" class="highlight-link">Projekte</a> an.
+                </p>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="grey lighten-3">
+
+        <div class="row hide-on-large-only">
+            <div class="col s10 m10 offset-m1 offset-s1">
+                <h4 class="black-text text-darken-5">Hallo ich bin</h4>
+                <h1 class="black-text text-darken-5 name">Dominik</h1>
+                <p class="flow-text grey-text text-darken-3">Ich bin ein kreativer Webdesigner und Entwickler aus
+                    München. Sie wollen mit mir arbeiten ? Dann schreiben Sie mir doch einfach eine <a
+                        href="mailto:braun-dominik@t-online.de" target="_blank"
+                        class="highlight-link altColor">E-Mail</a>. Oder
+                    sie
+                    sehen sich zuerst die <a class="highlight-link altColor">Projekte</a> auf dieser Seite an.
+                </p>
+            </div>
+        </div>
+
+        <section class="container section" id="projekte">
+            <div class="h2wrapper">
+                <h2 class="white-text text-darken-4">Projekte</h2>
+            </div>
+
+            <div class="row">
+                <div class="col s12 l6">
+                    <div class="card blue lighten-3">
+                        <div class="card-image">
+                            <img src="files/content/scattered/teaser.webp">
+                            <img class="headerimg" src="files/content/scattered/header2.webp">
+                        </div>
+
+                        <div class="card-action">
+                            <a>Scattered</a>
+                        </div>
+
+                        <div class="card-content grey-text text-darken-4">
+                            <!-- <span class="card-title">Scattered</span> -->
+                            <p>Scattered ist ein interaktives Erlebnis für Smartphones, bei dem man sich mit
+                                einer Pusteblume auf eine Reise begibt.
+                            </p>
+                            <div hidden class="infotext">
+                                <div class="row">
+                                    <div class="col l12">
+                                        <h4 class="hide-on-med-and-down">Das Konzept</h4>
+                                        <h5 class="hide-on-large-only">Das Konzept</h5>
+                                        <img class="text-wrap hide-on-med-and-down"
+                                            src="files/content/scattered/Plakat_Onboarding.webp" alt="">
+                                        <p>Sobald der Nutzer die App startet, führt ihn ein kurzes Intro-Video in
+                                            die
+                                            Anwendung ein. Jeder Nutzer kann den virtuellen Flugsamen eines
+                                            Löwenzahns
+                                            in
+                                            einpflanzen und die entstehende Pusteblume in die Welt hinaussenden. Die
+                                            Flugsamen
+                                            fliegen aus dem Bild hinaus, und verteilen sich auf der ganzen
+                                            Welt.
+                                        </p>
+
+                                        <p>
+                                            Andere Spieler können mit Hilfe des AR-Modus der App nun auf die
+                                            Suche nach den verteilten Flugsamen gehen, die an der Erdoberfläche
+                                            darauf warten, gefunden und eingepflanzt zu werden. Bewegt sich ein
+                                            Spieler innerhalb eines 10 Meter Radius, vibriert sein Handy, um auf
+                                            einen nahegelegenen Flugsamen aufmerksam zu machen. Ist einer
+                                            dieser Samen durch die AR-Kamera sichtbar, kann dieser angeklickt
+                                            werden. Nun wird der Nutzer aufgefordert, ein Foto vom Fundort zu
+                                            machen. Dieses wird automatisch an die Person gesendet, die diesen
+                                            Samen auf die Reise geschickt hat.
+                                        </p>
+                                        <p>
+                                            Nachdem der zweite Spieler diesen Schritt absolviert hat, kann er den
+                                            gefundenen Samen über sein eigenes Handy einpflanzen und eine neue
+                                            Pusteblume entsteht. Die Samen dieser Pflanze können dann wieder
+                                            weggepustet werden. Aus einer Blume entstehen somit viele weitere. Jeder
+                                            nutzer
+                                            kann
+                                            verfolgen wo die Samen seiner Pusteblumen gelandet sind.
+                                        </p>
+
+                                        <img class="text-wrap hide-on-large-only"
+                                            src="files/content/scattered/Plakat_Onboarding.webp" alt="">
+
+                                        <h4 class="hide-on-med-and-down">Umsetzung und verwendete Techniken</h4>
+                                        <h5 class="hide-on-large-only">Umsetzung und verwendete Techniken</h5>
+                                        <p>
+                                            Scattered wurde in Form eines Prototyps teilweise umgesetzt. Ziel war es
+                                            sich mit neuen Techniken und Augmented Reality auseinanderzusetzen um
+                                            einen
+                                            Protoypen zu erschaffen der in einem kleinen Raum funktioniert.
+                                            Mit dem Prototyp ist es möglich Pusteblumen auf die Marker im Raum zu
+                                            verteilen und diese anschließend durch ein Foto des 3D-Modells in der
+                                            persönlichen Galerie abzuspeichern.
+                                            Hierfür wurde <strong>Google Firebase</strong> verwendet um die Bilder
+                                            abzuspeichern und
+                                            diese in einer Datenbank abzulegen. Außerdem wurde Firebase zur
+                                            Authentifizierung der Nutzer verwendet. Für die Animationen innerhalb
+                                            der
+                                            Anwendung wurde <strong>Lottie</strong> verwendet um als json
+                                            exportierte
+                                            After Effects
+                                            Animationen im Web zu rendern. Für die Augmented Reality Erfahrung
+                                            wurden
+                                            <strong>AR.js</strong> und <strong>three.js</strong> verwendet.
+                                        </p>
+                                    </div>
+                                    <!-- <div class="col l5 contentimage">
+                                        <img src="files/content/scattered/Plakat_Onboarding.webp" alt="">
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col s12 l6">
+                    <div class="card grey lighten-1">
+                        <div class="card-image">
+                            <img src="files/content/lookbeyond/teaser.webp">
+                            <img class="headerimg" src="files/content/lookbeyond/headerDesktop.webp">
+                        </div>
+
+                        <div class="card-action">
+                            <a>Look Beyond</a>
+                        </div>
+
+                        <div class="card-content grey-text text-darken-4">
+                            <!-- <span class="card-title">Look Beyond</span> -->
+                            <p>Look Beyond ist ein Stop-Motion Film über Superhelden, Großeltern und die Fantasie
+                                eines
+                                kleinen Jungen.
+                            </p>
+                            <div hidden class="infotext">
+                                <div class="row">
+                                    <div class="col l12">
+                                        <h4 class="hide-on-med-and-down">Das Konzept</h4>
+                                        <h5 class="hide-on-large-only">Das Konzept</h5>
+                                        <img class="text-wrap hide-on-med-and-down"
+                                            src="files/content/lookbeyond/lookbeyondstill.jpg" alt="">
+                                        <p>
+                                            Look Beyond ist ein Stop Motion Kurzfilm, der im Rahmen meines
+                                            Projektstudiums entstanden ist. Hierfür haben wir uns mit der Stop Motion
+                                            Technik auseinandergesetzt und eine Pipeline geschaffen um an der Hochschule
+                                            Stop Motion Projekte zu verwirklichen. Das Set sowie die Figuren wurde alle
+                                            selbst konzipiert und von Hand gefertigt. Um die Figuren zum sprechen zu
+                                            bringen wurde ein Face Replacement Verfahren verwendet. Hierbei wurden die
+                                            unterschiedlichen Gesichtausdrücke
+                                            per 3D-Druckverfahren produziert. Meine
+                                            Zuständigkeiten in diesem Projekt lagen primär im Bereich Sounddesign,
+                                            Videoschnitt und die Verwendung der Stop-Motion Software. Verwendet wurde
+                                            die Stop-Motion-Animationssoftware und Hardware Dragonframe zur Aufnahme und
+                                            Planung der Szenen. Für die Erstellung der 3D-Modelle für Face Replacement
+                                            und VFX wurde Blender genutzt. In der
+                                            Postproduktion kamen Adobe Photoshop, Lightroom, Premiere, Audition und
+                                            After Effects zum Einsatz.
+                                        </p>
+                                        <img class="text-wrap hide-on-large-only"
+                                            src="files/content/lookbeyond/lookbeyondstill.jpg" alt="">
+                                        <p class="floatclear">Der fertige Film kann hier angesehen werden</p>
+                                        <div class="video-container">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube-nocookie.com/embed/9COOVIVHRcs" frameborder="0"
+                                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section" id="kontakt">
+            <div class="h2wrapper">
+                <h2 class="white-text text-darken-4 contact">Kontaktieren sie mich unter: <a
+                        href="mailto:braun-dominik@t-online.de" target="_blank"
+                        class="contact-info">braun-dominik@t-online.de</a></h2>
+
+            </div>
+        </section>
+
+
+        <div id="cover" class="cover"></div>
+
+        <div id="open-content" class="open-content">
+            <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+            <img id="open-content-image" src="" />
+            <div class="text" id="open-content-text">
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer grey darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Dominik Braun
+                <a class="grey-text text-lighten-4 right" href="#!">Datenschutz</a>
+                <a class="grey-text text-lighten-4 right impressum" href="/impressum.html">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+
 </body>
+
 </html>
