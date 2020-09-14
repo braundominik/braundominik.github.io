@@ -8,6 +8,8 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -32,7 +34,9 @@
 
     <header>
         <div class="navbar-fixed">
-            <nav class="nav-wrapper transparent black">
+            <nav class="nav-wrapper">
+                <a class="right" href="https://twitter.com/braundmnk" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter"></i></a>
                 <div class="container">
                     <a href="" class="sidenav-trigger" data-target="m-menu">
                         <i class="material-icons">menu</i>
@@ -56,8 +60,10 @@
                 <h4 class="grey-text text-lighten-5">Hallo ich bin</h4>
                 <h1 class="grey-text text-lighten-5 name">Dominik</h1>
                 <p class="flow-text grey-text text-lighten-3">Webdesigner, Entwickler und kreativer Kopf aus
-                    München. In diesem Portfolio stelle ich meine <a href="#projekte" class="highlight-link">Projekte</a> vor. Sie können mir auch gerne eine <a
-                        href="mailto:braun-dominik@t-online.de" target="_blank" class="highlight-link">E-Mail</a> schreiben.
+                    München. In diesem Portfolio stelle ich meine <a href="#projekte"
+                        class="highlight-link">Projekte</a> vor. Sie können mir auch gerne eine <a
+                        href="mailto:braun-dominik@t-online.de" target="_blank" class="highlight-link">E-Mail</a>
+                    schreiben.
                 </p>
             </div>
         </div>
@@ -86,6 +92,68 @@
             </div>
 
             <div class="row">
+
+
+
+                <div class="col s12 l6">
+                    <div class="card orange lighten-4">
+                        <div class="card-image">
+                            <img src="files/content/arproject/teaser.jpg">
+                            <img class="headerimg" src="files/content/arproject/header.jpg">
+                        </div>
+
+                        <div class="card-action">
+                            <a>AR im Smartphone Browser</a>
+                        </div>
+
+                        <div class="card-content grey-text text-darken-4">
+                            <!-- <span class="card-title">Look Beyond</span> -->
+                            <p>Ein Prototyp zur Nutzung von Augmented Reality im Browser mit der WebXR Device API.
+                            </p>
+                            <div hidden class="infotext">
+                                <div class="row">
+                                    <div class="col l12">
+                                        <h4 class="hide-on-med-and-down">Der Prototyp</h4>
+                                        <h5 class="hide-on-large-only">Der Prototyp</h5>
+                                        <img class="text-wrap hide-on-med-and-down"
+                                            src="files/content/arproject/lampe.jpg" alt="">
+                                        <p>
+                                            Dieser Prototyp ermöglicht es ein virtuelles Modell einer Schreibtischlampe
+                                            durch die Smartphone Kamera im Raum zu platzieren. Dabei handelt es sich um
+                                            ein AR-Erlebnis welches ohne Marker und im Browser genutzt werden kann. Der
+                                            Prototyp verwendet die WebXR Device Api und das dazugehörige WebXR Hit Test
+                                            Module um über Ray Casting Oberflächen in der realen Welt zu identifizieren.
+                                        </p>
+
+                                        <p>
+                                            Wenn Oberflächen erkannt werden wird das entsprechende Objekt dort
+                                            dargestellt. Mit einem Tippen auf den Bildschirm wird es an der jeweiligen
+                                            Stelle fixiert und die Kamera kann frei bewegt werden. Mit einem erneuten
+                                            Tippen wird die Fixierung gelöst und das Objekt kann erneut platziert
+                                            werden.
+                                        </p>
+
+                                        <p>
+                                            Mit Hilfe dieses Prototyps wurde im Rahmen meiner Bachelor-Thesis eine
+                                            Studie
+                                            durchgeführt um die Akzeptanz von Augmented Reality im Browser ohne die
+                                            Verwendung eines Marker zu untersuchen.
+                                        </p>
+                                        <img class="text-wrap hide-on-large-only"
+                                            src="files/content/arproject/lampe.jpg" alt="">
+                                        <p class="floatclear flow-text">Der Prototyp kann auf <a
+                                                href="https://braundominik.github.io/webxr-prototype">braundominik.github.io/webxr-prototype</a>
+                                            getestet werden (Nur für Mobilgeräte mit Chrome für Android)</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div class="col s12 l6">
                     <div class="card blue lighten-3">
                         <div class="card-image">
@@ -228,67 +296,6 @@
                                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen></iframe>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="col s12 l6">
-                    <div class="card grey">
-                        <div class="card-image">
-                            <img src="files/content/arproject/teaser.jpg">
-                            <img class="headerimg" src="files/content/arproject/header.jpg">
-                        </div>
-
-                        <div class="card-action">
-                            <a>AR im Smartphone Browser</a>
-                        </div>
-
-                        <div class="card-content grey-text text-darken-4">
-                            <!-- <span class="card-title">Look Beyond</span> -->
-                            <p>Ein Prototyp zur Nutzung von Augmented Reality im Browser mit der WebXR Device API.
-                            </p>
-                            <div hidden class="infotext">
-                                <div class="row">
-                                    <div class="col l12">
-                                        <h4 class="hide-on-med-and-down">Der Prototyp</h4>
-                                        <h5 class="hide-on-large-only">Der Prototyp</h5>
-                                        <img class="text-wrap hide-on-med-and-down"
-                                            src="files/content/arproject/lampe.jpg" alt="">
-                                        <p>
-                                            Dieser Prototyp ermöglicht es ein virtuelles Modell einer Schreibtischlampe
-                                            durch die Smartphone Kamera im Raum zu platzieren. Dabei handelt es sich um
-                                            ein AR-Erlebnis welches ohne Marker und im Browser genutzt werden kann. Der
-                                            Prototyp verwendet die WebXR Device Api und das dazugehörige WebXR Hit Test
-                                            Module um über Ray Casting Oberflächen in der realen Welt zu identifizieren.
-                                        </p>
-
-                                        <p>
-                                            Wenn Oberflächen erkannt werden wird das entsprechende Objekt dort
-                                            dargestellt. Mit einem Tippen auf den Bildschirm wird es an der jeweiligen
-                                            Stelle fixiert und die Kamera kann frei bewegt werden. Mit einem erneuten
-                                            Tippen wird die Fixierung gelöst und das Objekt kann erneut platziert
-                                            werden.
-                                        </p>
-
-                                        <p>
-                                            Mit Hilfe dieses Prototyps wurde im Rahmen meiner Bachelor-Thesis eine
-                                            Studie
-                                            durchgeführt um die Akzeptanz von Augmented Reality im Browser ohne die
-                                            Verwendung eines Marker zu untersuchen.
-                                        </p>
-                                        <img class="text-wrap hide-on-large-only"
-                                            src="files/content/arproject/lampe.jpg" alt="">
-                                        <p class="floatclear flow-text">Der Prototyp kann auf <a
-                                                href="https://braundominik.github.io/webxr-prototype">braundominik.github.io/webxr-prototype</a>
-                                            getestet werden (Nur für Mobilgeräte mit Chrome für Android)</p>
-
                                     </div>
                                 </div>
                             </div>

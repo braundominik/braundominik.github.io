@@ -35,6 +35,15 @@ nav ul a {
     font-size: 1.3rem;
 }
 
+nav:first-child {
+    padding-right: 30px;
+}
+
+.fa-twitter {
+    height: 64px !important;
+    line-height: 64px !important;
+}
+
 .contact {
     font-size: 1.8vw;
 }
@@ -55,7 +64,8 @@ nav ul a {
 /* css transition for scrolling navbar */
 
 nav {
-    transition: background-color .3s;
+    background: url(files/header/menubg.jpg)
+    /* transition: background-color .3s; */
 }
 
 .card .card-image .headerimg {
@@ -305,13 +315,16 @@ nav {
     .contact a {
         display: block;
     }
-    #kontakt .h2wrapper{
+    #kontakt .h2wrapper {
         height: 100px;
     }
-
-    #kontakt .h2wrapper h2{
+    #kontakt .h2wrapper h2 {
         line-height: 30px;
         padding-top: 20px;
+    }
+    .fa-twitter {
+        height: 56px !important;
+        line-height: 56px !important;
     }
 }
 
@@ -328,8 +341,8 @@ nav {
 }
 
 .navbar-fixed {
-    z-index: 999; 
- }
+    z-index: 999;
+}
 
 html {
     font-family: 'Montserrat', sans-serif;
@@ -352,6 +365,6 @@ html {
     color: black;
 }
 
-.placesscreens{
+.placesscreens {
     margin-top: 2em;
 }

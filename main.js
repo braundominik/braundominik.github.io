@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var instances = M.Sidenav.init(elems, options);
 
     navbar = document.querySelector("nav");
-    addScrollListener();
+    /* addScrollListener(); */
     document.querySelector(".loader").style.display = "none";
     init();
 });
@@ -19,7 +19,7 @@ document.addEventListener("load", function () {
 
 
 //track scrolling to change navbar color
-function addScrollListener() {
+/* function addScrollListener() {
     window.addEventListener("scroll", function () {
         if (this.window.scrollY == 0) {
             navbar.classList.add("transparent");
@@ -29,7 +29,7 @@ function addScrollListener() {
         }
 
     });
-}
+} */
 
 /* Card Animation */
 
